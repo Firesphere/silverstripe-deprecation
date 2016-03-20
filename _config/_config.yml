@@ -13,6 +13,9 @@ ModelAdmin:
 SecurityAdmin:
   extensions:
     - DeprecatedSecurityAdminMethodsExtension
+RestfulService:
+  extensions:
+    - DeprecatedRestfulServiceMethodsExtension
 ModelAsController:
   extensions:
     - DeprecatedModelAsControllerMethodsExtension
