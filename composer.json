@@ -1,0 +1,24 @@
+{
+  "name": "firesphere/silverstripe-deprecation",
+  "description": "Separate the deprecated methods from the core to a separate module",
+  "type": "silverstripe-module",
+  "keywords": ["silverstripe", "methods", "deprecation"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Simon Erkelens",
+      "email": "simon@casa-laguna.net"
+    }
+  ],
+  "require": {
+    "silverstripe/framework": ">=3.3.0",
+    "silverstripe/cms": ">=3.3.0"
+  },
+  "require-dev": {
+    "phpunit/PHPUnit": "~3.7@stable"
+  },
+  "extra": {
+    "installer-name": "deprecation"
+  },
+  "target-dir": "deprecation"
+}

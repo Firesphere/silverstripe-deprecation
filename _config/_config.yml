@@ -1,0 +1,18 @@
+DataObject:
+  extensions:
+    - DeprecatedDataObjectMethodsExtension
+Object:
+  extensions:
+    - DeprecatedObjectMethodsExtension
+ModelAsController:
+  extensions:
+    - DeprecatedModelAsControllerMethodsExtension
+RootURLController:
+  extensions:
+    - DeprecatedRootURLControllerMethodsExtension
+SiteTree:
+  extensions:
+    - DeprecatedSiteTreeMethodsExtension
+ErrorPage:
+  extensions:
+    - DeprecatedErrorPageMethodsExtension
