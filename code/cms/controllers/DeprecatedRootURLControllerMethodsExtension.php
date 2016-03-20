@@ -15,7 +15,8 @@ class DeprecatedRootURLControllerMethodsExtension extends DataExtension
      * @deprecated 4.0 Use the "RootURLController.default_homepage_link" config setting instead
      * @param string $urlsegment the URL segment for your home page
      */
-    static public function set_default_homepage_link($urlsegment = "home") {
+    static public function set_default_homepage_link($urlsegment = "home")
+    {
         Deprecation::notice('4.0', 'Use the "RootURLController.default_homepage_link" config setting instead');
         Config::inst()->update('RootURLController', 'default_homepage_link', $urlsegment);
     }
@@ -26,7 +27,8 @@ class DeprecatedRootURLControllerMethodsExtension extends DataExtension
      * @deprecated 4.0 Use the "RootURLController.default_homepage_link" config setting instead
      * @return string
      */
-    static public function get_default_homepage_link() {
+    static public function get_default_homepage_link()
+    {
         Deprecation::notice('4.0', 'Use the "RootURLController.default_homepage_link" config setting instead');
         return Config::inst()->get('RootURLController', 'default_homepage_link');
     }

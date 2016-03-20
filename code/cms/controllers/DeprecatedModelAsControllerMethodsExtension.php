@@ -6,7 +6,7 @@
  * Date: 20/03/16
  * Time: 15:15
  */
-class DeprecatedModelAsControllerExtension extends DataExtension
+class DeprecatedModelAsControllerMethodsExtension extends DataExtension
 {
 
 
@@ -18,7 +18,8 @@ class DeprecatedModelAsControllerExtension extends DataExtension
      * @param bool $ignoreNestedURLs
      * @return SiteTree
      */
-    static public function find_old_page($URLSegment, $parent = null, $ignoreNestedURLs = false) {
+    static public function find_old_page($URLSegment, $parent = null, $ignoreNestedURLs = false)
+    {
         Deprecation::notice('4.0', 'Use OldPageRedirector::find_old_page instead');
         if ($parent) {
             $parent = SiteTree::get()->byId($parent);
