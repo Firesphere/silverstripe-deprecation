@@ -12,7 +12,8 @@ class DeprecatedRestfulServiceMethodsExtension extends DataExtension
     /**
      * @deprecated since version 4.0
      */
-    protected function constructURL(){
+    protected function constructURL()
+    {
         Deprecation::notice('4.0', 'constructURL is deprecated, please use `getAbsoluteRequestURL` instead');
         return Controller::join_links($this->owner->baseURL, '?' . $this->owner->queryString);
     }
@@ -21,12 +22,12 @@ class DeprecatedRestfulServiceMethodsExtension extends DataExtension
      * @param string
      * @deprecated since version 4.0
      */
-    public function setCachedBody($content) {
+    public function setCachedBody($content)
+    {
         Deprecation::notice('4.0', 'Setting the response body is now deprecated, set the cached request instead');
         if (!$this->owner->cachedResponse) {
             $this->owner->cachedResponse = new RestfulService_Response($content);
-        }
-        else {
+        } else {
             $this->owner->cachedResponse->setBody($content);
         }
     }
@@ -39,7 +40,8 @@ class DeprecatedRestfulServiceMethodsExtension extends DataExtension
      * @param int $option The cURL opt Constant
      * @param mixed $value The cURL opt value
      */
-    public static function set_default_curl_option($option, $value) {
+    public static function set_default_curl_option($option, $value)
+    {
         Deprecation::notice('4.0', 'Use the "RestfulService.default_curl_options" config setting instead');
         Config::inst()->update('RestfulService', 'default_curl_options', array($option => $value));
     }
@@ -49,7 +51,8 @@ class DeprecatedRestfulServiceMethodsExtension extends DataExtension
      *
      * @deprecated 4.0 Use the "RestfulService.default_curl_options" config setting instead
      */
-    public static function set_default_curl_options($optionArray) {
+    public static function set_default_curl_options($optionArray)
+    {
         Deprecation::notice('4.0', 'Use the "RestfulService.default_curl_options" config setting instead');
         Config::inst()->update('RestfulService', 'default_curl_options', $optionArray);
     }
@@ -65,7 +68,8 @@ class DeprecatedRestfulServiceMethodsExtension extends DataExtension
      * @deprecated 4.0 Use the "RestfulService.default_curl_options" config setting instead,
      *             with direct reference to the CURL_* options
      */
-    public static function set_default_proxy($proxy, $port = 80, $user = "", $password = "", $socks = false) {
+    public static function set_default_proxy($proxy, $port = 80, $user = "", $password = "", $socks = false)
+    {
         Deprecation::notice(
             '4.0',
             'Use the "RestfulService.default_curl_options" config setting instead, '

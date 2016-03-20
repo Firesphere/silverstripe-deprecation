@@ -16,6 +16,9 @@ SecurityAdmin:
 RestfulService:
   extensions:
     - DeprecatedRestfulServiceMethodsExtension
+ContentNegotiator:
+  extensions:
+    - DeprecatedContentNegotiatorMethodsExtension
 ModelAsController:
   extensions:
     - DeprecatedModelAsControllerMethodsExtension
