@@ -22,6 +22,9 @@ ContentNegotiator:
 YamlFixture:
   extensions:
     - DeprecatedYamlfixtureMethodsExtension
+Email:
+  extensions:
+    - DeprecatedEmailMethodsExtension
 ModelAsController:
   extensions:
     - DeprecatedModelAsControllerMethodsExtension
