@@ -2,7 +2,11 @@
   "name": "firesphere/silverstripe-deprecation",
   "description": "Separate the deprecated methods from the core to a separate module",
   "type": "silverstripe-module",
-  "keywords": ["silverstripe", "methods", "deprecation"],
+  "keywords": [
+    "silverstripe",
+    "methods",
+    "deprecation"
+  ],
   "license": "BSD-3-Clause",
   "authors": [
     {

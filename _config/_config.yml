@@ -4,6 +4,15 @@ DataObject:
 Object:
   extensions:
     - DeprecatedObjectMethodsExtension
+LeftAndMain:
+  extensions:
+    - DeprecatedLeftAndMainMethodsExtension
+ModelAdmin:
+  extensions:
+    - DeprecatedModelAdminMethodsExtension
+SecurityAdmin:
+  extensions:
+    - DeprecatedSecurityAdminMethodsExtension
 ModelAsController:
   extensions:
     - DeprecatedModelAsControllerMethodsExtension

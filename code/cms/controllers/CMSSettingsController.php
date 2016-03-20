@@ -5,12 +5,13 @@
  *
  * @package cms
  */
-class CMSSettingsController extends SiteConfigLeftAndMain {
+class CMSSettingsController extends SiteConfigLeftAndMain
+{
 
-	/**
-	 * @config
-	 * @var int
-	 */
-	private static $url_priority = 60;
+    /**
+     * @config
+     * @var int
+     */
+    private static $url_priority = 60;
 
 }
