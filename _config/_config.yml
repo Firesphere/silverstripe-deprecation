@@ -19,6 +19,9 @@ RestfulService:
 ContentNegotiator:
   extensions:
     - DeprecatedContentNegotiatorMethodsExtension
+YamlFixture:
+  extensions:
+    - DeprecatedYamlfixtureMethodsExtension
 ModelAsController:
   extensions:
     - DeprecatedModelAsControllerMethodsExtension

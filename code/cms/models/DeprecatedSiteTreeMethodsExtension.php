@@ -9,7 +9,9 @@
 
 /**
  * StartGeneratedWithDataObjectAnnotator
+ * 
  * @property SiteTree|DeprecatedSiteTreeMethodsExtension owner
+ * 
  * EndGeneratedWithDataObjectAnnotator
  */
 class DeprecatedSiteTreeMethodsExtension extends DataExtension

@@ -9,7 +9,9 @@
 
 /**
  * StartGeneratedWithDataObjectAnnotator
+ * 
  * @property ErrorPage|DeprecatedErrorPageMethodsExtension owner
+ * 
  * EndGeneratedWithDataObjectAnnotator
  */
 class DeprecatedErrorPageMethodsExtension extends DataExtension
