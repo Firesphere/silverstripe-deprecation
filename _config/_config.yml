@@ -28,6 +28,12 @@ Email:
 Mailer:
   extensions:
     - DeprecatedMailerMethodsExtension
+GDBackend:
+  extensions:
+    - DeprecatedGDBackendMethodsExtension
+ImagickBackend:
+  extensions:
+    - DeprecatedImagickBackendMethodsExtension
 ModelAsController:
   extensions:
     - DeprecatedModelAsControllerMethodsExtension

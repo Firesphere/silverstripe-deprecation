@@ -10,6 +10,12 @@ class DeprecatedYamlFixtureMethodsExtension extends DataExtension
 {
 
     /**
+     * @var FixtureFactory
+     * @deprecated 3.1 Use writeInto() and FixtureFactory instead
+     */
+    protected $factory;
+
+    /**
      * Get the ID of an object from the fixture.
      *
      * @deprecated 4.0 Use writeInto() and FixtureFactory accessors instead
@@ -71,4 +77,21 @@ class DeprecatedYamlFixtureMethodsExtension extends DataExtension
         $this->owner->writeInto($this->owner->factory);
     }
 
+}
+
+/**
+ * This class is maintained for backwards-compatibility only. Please use the {@link GDBackend} class instead.
+ *
+ * @package framework
+ * @subpackage filesystem
+ */
+class GD extends GDBackend {
+
+    /**
+     * @deprecated 4.0 Use the "GDBackend.default_quality" config setting instead
+     */
+    public static function set_default_quality($quality) {
+        Deprecation::notice('4.0', 'Use the "GDBackend.default_quality" config setting instead');
+        GDBackend::set_default_quality($quality);
+    }
 }
