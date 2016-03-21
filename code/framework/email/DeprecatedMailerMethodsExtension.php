@@ -6,7 +6,7 @@
  * Date: 20/03/16
  * Time: 17:05
  */
-class DeprecatedMailerMethodsExtension extends DataObject
+class DeprecatedMailerMethodsExtension extends DataExtension
 {
 
     /**

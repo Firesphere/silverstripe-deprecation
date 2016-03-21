@@ -25,6 +25,9 @@ YamlFixture:
 Email:
   extensions:
     - DeprecatedEmailMethodsExtension
+Mailer:
+  extensions:
+    - DeprecatedMailerMethodsExtension
 ModelAsController:
   extensions:
     - DeprecatedModelAsControllerMethodsExtension
